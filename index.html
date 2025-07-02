@@ -1,0 +1,392 @@
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品展示 | 专业解决方案</title>
+  <!-- 引入 Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 引入 Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <!-- 配置 Tailwind CSS -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#165DFF',
+            secondary: '#0FC6C2',
+            neutral: {
+              100: '#F5F7FA',
+              200: '#E4E7ED',
+              300: '#C0C6CF',
+              400: '#909399',
+              500: '#606266',
+              600: '#303133',
+              700: '#1E1E1E',
+            }
+          },
+          fontFamily: {
+            inter: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      }
+    }
+  </script>
+  
+  
+  </style>
+</head>
+<body class="font-inter bg-neutral-100 text-neutral-600">
+  <!-- 英雄区域 -->
+  <section class="relative bg-gradient-to-br from-primary/5 to-secondary/5 py-16 md:py-24 overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-10 left-10 w-64 h-64 rounded-full bg-primary/30 blur-3xl"></div>
+      <div class="absolute bottom-10 right-10 w-80 h-80 rounded-full bg-secondary/30 blur-3xl"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-neutral-700 leading-tight mb-6">
+          专注于全平台骑士的<span class="text-primary">健康服务</span>
+        </h1>
+        <p class="text-lg md:text-xl text-neutral-500 mb-8">
+          街头的众包仔，有学生，有赌徒，有农民工，有失业的白领，破产的老板，就是没有懦夫，咸鱼不死，终会翻身，祝大家平安，加油！
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#products" class="btn-primary">
+            <i class="fa fa-th-large mr-2"></i>浏览产品
+          </a>
+          <a href="#" class="btn-outline">
+            <i class="fa fa-headphones mr-2"></i>联系我们
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 产品展示区 -->
+  <section id="products" class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-700 mb-4">您好顾客，请选择</h2>
+        <p class="text-lg text-neutral-500 max-w-2xl mx-auto">
+          专业与创新，健康无忧！验真服务详情咨询。
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- 顺丰同城骑士 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="sf.jpg" alt="顺丰同城骑士服务" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold text-neutral-700">顺丰同城骑士</h3>
+              <span class="bg-red-100 text-red-600 text-sm font-medium px-3 py-1 rounded-full">1-3天交单</span>
+            </div>
+            <p class="text-neutral-500 mb-4">
+              需要姓名，年龄，头像，身份证号，跑单所在地详细到区，代办期间收到失败短信是正常的，通过之前不要顶号
+            </p>
+            <div class="flex items-center text-neutral-400 text-sm mb-6">
+              <span class="flex items-center mr-4"><i class="fa fa-motorcycle mr-1"></i> 全国覆盖</span>
+              <span class="flex items-center"><i class="fa fa-clock-o mr-1"></i> 无需修改站点</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-lg font-bold text-primary">¥50起/单</span>
+              <a href="#" class="btn-primary text-sm">
+                <i class="fa fa-shopping-cart mr-1"></i> 先过后F
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 美团 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="mt.jpg" alt="美团综合服务平台" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold text-neutral-700">美团</h3>
+              <span class="bg-yellow-100 text-yellow-600 text-sm font-medium px-3 py-1 rounded-full">秒过</span>
+            </div>
+            <p class="text-neutral-500 mb-4">
+              需要您提供，姓名，年龄，头像，跑单所在地，注意，上传时切记一定要从相册上传原图，信息严格按照证件信息去填写
+            </p>
+            <div class="flex items-center text-neutral-400 text-sm mb-6">
+              <span class="flex items-center mr-4"><i class="fa fa-cutlery mr-1"></i> 众包</span>
+              <span class="flex items-center"><i class="fa fa-bed mr-1"></i> 专送</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-lg font-bold text-primary">￥25/单起</span>
+              <a href="#" class="btn-primary text-sm">
+                <i class="fa fa-shopping-cart mr-1"></i> 先过后F
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 蜂鸟 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="fn.jpg" alt="蜂鸟配送服务" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold text-neutral-700">蜂鸟配送</h3>
+              <span class="bg-blue-100 text-blue-600 text-sm font-medium px-3 py-1 rounded-full">秒过</span>
+            </div>
+            <p class="text-neutral-500 mb-4">
+              需要您提供，姓名，年龄，头像，跑单所在地，注意，上传时切记一定要从相册上传原图，信息严格按照证件信息去填写
+            </p>
+            <div class="flex items-center text-neutral-400 text-sm mb-6">
+              <span class="flex items-center mr-4"><i class="fa fa-bicycle mr-1"></i> 众包</span>
+              <span class="flex items-center"><i class="fa fa-bolt mr-1"></i> 专送</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-lg font-bold text-primary">¥25起/单</span>
+              <a href="#" class="btn-primary text-sm">
+                <i class="fa fa-shopping-cart mr-1"></i> 先过后F
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 达达 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+          <div class="h-48 overflow-hidden">
+            <img src="dd.jpg" alt="达达快送服务" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold text-neutral-700">达达秒送骑士</h3>
+              <span class="bg-green-100 text-green-600 text-sm font-medium px-3 py-1 rounded-full">秒过</span>
+            </div>
+            <p class="text-neutral-500 mb-4">
+              需要您提供，姓名，年龄，头像，跑单所在地，注意，上传时切记一定要从相册上传原图，信息严格按照证件信息去填写
+            </p>
+            <div class="flex items-center text-neutral-400 text-sm mb-6">
+              <span class="flex items-center mr-4"><i class="fa fa-truck mr-1"></i> 众包</span>
+              <span class="flex items-center"><i class="fa fa-clock-o mr-1"></i> 专送</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-lg font-bold text-primary">¥25起/单</span>
+              <a href="#" class="btn-primary text-sm">
+                <i class="fa fa-shopping-cart mr-1"></i> 先过后F
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 客户评价 -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-700 mb-4">客户评价</h2>
+        <p class="text-lg text-neutral-500 max-w-2xl mx-auto">
+          听听我们的客户如何评价我们的产品和服务。
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- 评价卡片 1 -->
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <div class="flex items-center mb-4">
+            <img src="https://picsum.photos/seed/user1/100/100" alt="张明的头像" class="w-12 h-12 rounded-full object-cover mr-4">
+            <div>
+              <h4 class="font-bold text-neutral-700">张明</h4>
+              <p class="text-sm text-neutral-500">顺丰同城骑士</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 mb-3">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p class="text-neutral-600 italic">
+            "自己在正规地方办理的一直不给审核通过，找了他代办以后，当天就通过了，说的是1-3天，实际是比较快的，靠谱，专业，以后还找他"
+          </p>
+        </div>
+        
+        <!-- 评价卡片 2 -->
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <div class="flex items-center mb-4">
+            <img src="https://picsum.photos/seed/user2/100/100" alt="李婷的头像" class="w-12 h-12 rounded-full object-cover mr-4">
+            <div>
+              <h4 class="font-bold text-neutral-700">李婷</h4>
+              <p class="text-sm text-neutral-500">兼职众包女骑手</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 mb-3">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p class="text-neutral-600 italic">
+            "真是太方便了，省去了去医院的麻烦，并且都是先通过后F的，有效杜绝了客户受骗的难题，推荐给身边的朋友都觉得不错。"
+          </p>
+        </div>
+        
+        <!-- 评价卡片 3 -->
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <div class="flex items-center mb-4">
+            <img src="https://picsum.photos/seed/user3/100/100" alt="王建国的头像" class="w-12 h-12 rounded-full object-cover mr-4">
+            <div>
+              <h4 class="font-bold text-neutral-700">王建国</h4>
+              <p class="text-sm text-neutral-500">众包骑手</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 mb-3">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p class="text-neutral-600 italic">
+            "老板非常专业，服务非常到位，嘴里一口一个宝，叫的那是一个亲切啊，本次体验很舒服，很开心，会推荐给我的朋友的"
+          </p>
+        </div>
+        
+        <!-- 评价卡片 4 -->
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <div class="flex items-center mb-4">
+            <img src="https://picsum.photos/seed/user4/100/100" alt="陈静的头像" class="w-12 h-12 rounded-full object-cover mr-4">
+            <div>
+              <h4 class="font-bold text-neutral-700">陈静</h4>
+              <p class="text-sm text-neutral-500">顺丰同城骑士</p>
+            </div>
+          </div>
+          <div class="text-yellow-400 mb-3">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p class="text-neutral-600 italic">
+            "顺丰同城骑士交给老板登录了，期间我反复催问进度，老板很耐心，通过后第一时间联系我，特别靠谱，快速，给老板点赞"
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 行动召唤 -->
+  <section class="py-16 md:py-20 bg-gradient-to-r from-primary to-primary/80 text-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">准备好通过你的健健康康了吗？</h2>
+        <p class="text-lg md:text-xl opacity-90 mb-8">
+          选择我们的产品，开启高效、安全、智能的健康之旅。
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#products" class="bg-white text-primary hover:bg-neutral-100 font-bold py-3 px-8 rounded-lg transition-all duration-300 text-lg">
+            浏览产品
+          </a>
+          <a href="#" class="bg-transparent border-2 border-white text-white hover:bg-white/10 font-bold py-3 px-8 rounded-lg transition-all duration-300 text-lg">
+            本产品具有验真服务，详情咨询
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="bg-neutral-700 text-white py-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center mb-4">
+            <i class="fa fa-cube text-primary text-2xl mr-2"></i>
+            <span class="font-bold text-xl">ProductHub</span>
+          </div>
+          <p class="text-neutral-300 mb-4">
+            提供专业、健康解决方案，助力全平台骑手。
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-neutral-300 hover:text-white transition-colors duration-200">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#" class="text-neutral-300 hover:text-white transition-colors duration-200">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#" class="text-neutral-300 hover:text-white transition-colors duration-200">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="#" class="text-neutral-300 hover:text-white transition-colors duration-200">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="font-bold text-lg mb-4">产品</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-neutral-300 hover:text-white transition-colors duration-200">顺丰同城骑士</a></li>
+            <li><a href="#" class="text-neutral-300 hover:text-white transition-colors duration-200">美团</a></li>
+            <li><a href="#" class="text-neutral-300 hover:text-white transition-colors duration-200">蜂鸟配送</a></li>
+            <li><a href="#" class="text-neutral-300 hover:text-white transition-colors duration-200">达达快送</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-bold text-lg mb-4">公司</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-neutral-300 hover:text-white transition-colors duration-200">关于我们</a></li>
+            <li><a href="#" class="text-neutral-300 hover:text-white transition-colors duration-200">客户案例</a></li>
+            <li><a href="#" class="text-neutral-300 hover:text-white transition-colors duration-200">合作伙伴</a></li>
+            <li><a href="#" class="text-neutral-300 hover:text-white transition-colors duration-200">加入我们</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-bold text-lg mb-4">联系我们</h4>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <i class="fa fa-map-marker mt-1 mr-3 text-primary"></i>
+              <span class="text-neutral-300">暂未公开</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa fa-phone mr-3 text-primary"></i>
+              <span class="text-neutral-300">暂未公开</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa fa-envelope mr-3 text-primary"></i>
+              <span class="text-neutral-300">暂未公开</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-neutral-600 mt-12 pt-8 text-center text-neutral-400">
+        <p>© 2025 ProductHub. 健康砖家协会保留所有权利。</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // 平滑滚动
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+    
